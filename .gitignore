@@ -1,0 +1,12 @@
+*.sketch
+*.fig
+
+
+*.xd
+
+.DS_Store
+.prettierignore
+*tsconfig.json
+*script.ts
+
+design/
