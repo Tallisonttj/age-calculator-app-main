@@ -8,9 +8,9 @@ let outDay = document.querySelector('.outday span');
 let outMonth = document.querySelector('.outmonth span');
 let outYear = document.querySelector('.outyear span');
 click.addEventListener('click', () => {
-    verificar();
+    calcular();
 });
-function verificar() {
+function calcular() {
     let hasError = false;
     let validday = true;
     let validamonth = true;
@@ -31,7 +31,7 @@ function verificar() {
             let label = i.parentNode;
             label.classList.add('labelError');
             let error = document.createElement('p');
-            error.textContent = 'this field is required';
+            error.textContent = 'Campo obrigatorio';
             error.classList.add('error');
             i.after(error);
             hasError = true;
@@ -45,7 +45,7 @@ function verificar() {
         let label = inpDay.parentNode;
         label.classList.add('labelError');
         let error = document.createElement('p');
-        error.textContent = 'must be a valid day';
+        error.textContent = 'Dia informado não é valido';
         error.classList.add('error');
         inpDay.after(error);
         hasError = true;
@@ -56,7 +56,7 @@ function verificar() {
         let label = inpMonth.parentNode;
         label.classList.add('labelError');
         let error = document.createElement('p');
-        error.textContent = 'must be a valid month';
+        error.textContent = 'Mês informado não é valido';
         error.classList.add('error');
         inpMonth.after(error);
         hasError = true;
@@ -68,7 +68,7 @@ function verificar() {
         inputs.forEach((input) => input.style.borderColor = 'var(--Lightred)');
         labelE.forEach((label) => label.classList.add('labelError'));
         let error = document.createElement('p');
-        error.textContent = 'must be a valid date';
+        error.innerHTML = `Dia informado não é <br> valido para o mês`;
         error.classList.add('error');
         inpDay.after(error);
         hasError = true;
@@ -79,7 +79,7 @@ function verificar() {
         let label = inpYear.parentNode;
         label.classList.add('labelError');
         let error = document.createElement('p');
-        error.textContent = 'must be a valid year';
+        error.textContent = 'Ano informado não é valido';
         error.classList.add('error');
         inpYear.after(error);
         hasError = true;
