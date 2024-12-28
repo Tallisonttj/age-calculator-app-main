@@ -62,7 +62,7 @@ function calcular() {
         hasError = true;
         validamonth = false;
     }
-    if (month == 4 || month == 6 || month == 9 || month == 11 && day > 30 ||
+    if (month == 4 && day > 30 || month == 6 && day > 30 || month == 9 && day > 30 || month == 11 && day > 30 ||
         month == 2 && day > 29 && year % 4 === 0 ||
         month == 2 && day > 28 && year % 4 !== 0) {
         inputs.forEach((input) => input.style.borderColor = 'var(--Lightred)');
