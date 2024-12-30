@@ -6,7 +6,7 @@ Tecnologias:
 * HTML
 * CSS
 * typescript
-* JavaScrit
+* JavaScript
 
 Autores: Tallison Tadeu 
-Agradecimentos: Agradeço ao professor Bonieky Lacerda do curso B7WEB pelos ensimentos e ao pessoal do Fronted Mentor por terem disponibilizado o projeto de exemplo 
+Agradecimentos: Agradeço ao professor Bonieky Lacerda do curso B7WEB pelos ensinamentos e ao pessoal do Fronted Mentor por terem disponibilizado o projeto de exemplo 
